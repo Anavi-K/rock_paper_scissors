@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="score">
+        <div><span id="userScore" class="displayText">0</span></div>
+        <div class="displayText">-</div>
+        <div><span id="computerScore" class="displayText">0</span></div>
+    </div>
+    <div id="game">
+        <div id="user">
+            <span class="displayText">You</span>
+            <div>
+                <img class="handImage" id="UserRock" src="./assets/rock-hand.png">
+                <img class="handImage" id="UserPaper" src="./assets/paper-hand.png">
+                <img class="handImage" id="UserScissors" src="./assets/scissors-hand.png">
+            </div>
+            <div id="userButtons">
+                <img id="rockButtonUser" class="logo" src="./assets/rock-logo.png">
+                <img id="paperButtonUser" class="logo" src="./assets/paper-logo.png">
+                <img id="scissorsButtonUser" class="logo" src="./assets/scissors-logo.png">
+            </div>
+        </div>
+        <div><img id="vsImage" src="./assets/vs.png"></div>
+        <div id="computer">
+            <span class="displayText">Comp</span>
+            <div>
+                <img class="handImage" id="CompRock" src="./assets/rock-hand.png">
+                <img class="handImage" id="CompPaper" src="./assets/paper-hand.png">
+                <img class="handImage" id="CompScissors" src="./assets/scissors-hand.png">
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
